@@ -8,38 +8,56 @@
         </div>
     </section>
 
-    <section class="container-fluid section-page">
+    <section class="container-fluid section-page bg-secondary ">
         <div class="container">
             <p class="title-section mb-0">INFORMACIÓN</p>
             <div class="w-100">
-                <section class="row m-0 g-0 justify-content-center p-2">
+                <section class="row m-0 g-0 p-2">
                     <div class="col-12 col-md-6 col-lg-4 border d-flex justify-content-center align-items-center">
                         <i class="bi bi-person-square display-1"></i>
                     </div>
                     <div class="col-12 col-md-6 col-lg-8 border p-2">
                         <p class="title-section-info text-start">Sobre mi</p>
-                        <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut architecto odit inventore esse omnis commodi laboriosam natus quam sint, ullam fugiat asperiores aspernatur, deserunt hic. Nisi ex excepturi rerum?</p>
+                        <p class="text-start p-2">
+                            Soy un desarrollador web full stack apasionado por crear soluciones digitales innovadoras y eficientes. Con más de 5 años de experiencia en el campo, he trabajado en una variedad de proyectos que abarcan desde aplicaciones web dinámicas hasta sitios estáticos optimizados.
+                            Mi formación profesional en el <a href="#">Instituto Educación IT</a> me ha proporcionado una sólida base en principios de diseño y desarrollo.
+                            Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.
+                        </p>
                     </div>
-                    <div class="col-12 border p-2">
+                    <div class="col-12 col-md-6 col-lg-5 border p-2">
                         <p class="title-section-info text-start">Conocimientos en</p>
                         <div class="d-flex justify-content-start aligm-items-center flex-wrap">
-                            <img src="{{asset('assets/icons/html5-plain-wordmark.svg')}}" class="m-2" alt="HTML5" title="HTML5" width="60px">
-                            <img src="{{asset('assets/icons/css3-plain-wordmark.svg')}}" class="m-2" alt="CSS3" title="CSS3" width="60px">
-                            <img src="{{asset('assets/icons/javascript-plain.svg')}}" class="m-2" alt="Javascript" title="Javascript" width="60px">
-                            <img src="{{asset('assets/icons/bootstrap-original-wordmark.svg')}}" class="m-2" alt="Bootstrap" title="Bootstrap" width="60px">
-                            <img src="{{asset('assets/icons/jquery-plain-wordmark.svg')}}" class="m-2" alt="Jquery" title="Jquery" width="60px">
-                            <img src="{{asset('assets/icons/php-original.svg')}}" alt="PHP" class="m-2" title="PHP" width="60px">
-                            <img src="{{asset('assets/icons/mysql-original-wordmark.svg')}}" class="m-2" alt="MySQL" title="MySQL" width="60px">
-                            <img src="{{asset('assets/icons/laravel-original.svg')}}" class="m-2" alt="Laravel 11" title="Laravel 11" width="60px">
-                            <img src="{{asset('assets/icons/git-original.svg')}}" class="m-2" alt="Manejo de GIT" title="Manejo de GIT" width="60px">
-                            <img src="{{asset('assets/icons/sqlite-original.svg')}}" class="m-2" alt="SQLITE" title="SQLITE" width="60px">
-                            <img src="{{asset('assets/icons/angular-original.svg')}}" class="m-2" alt="Angular" title="Angular" width="60px">
-                            <img src="{{asset('assets/icons/react-original.svg')}}" class="m-2" alt="ReactJs" title="ReactJs" width="60px">
-                            <img src="{{asset('assets/icons/vuejs-original.svg')}}" class="m-2" alt="Vue.js" title="Vue.js" width="60px">
-                            <img src="{{asset('assets/icons/nodejs-plain-wordmark.svg')}}" class="m-2" alt="Node.js" title="Node.js" width="60px">
-                            <img src="{{asset('assets/icons/mongodb-original.svg')}}" class="m-2" alt="MongoDB" title="MongoDB" width="60px">
-                            <img src="{{asset('assets/icons/electron-original.svg')}}" class="m-2" alt="ElectronJs" title="ElectronJs" width="60px">
+                            <img src="{{asset('assets/icons/html5-plain-wordmark.svg')}}" class="m-2" alt="HTML5" title="HTML5" width="40px">
+                            <img src="{{asset('assets/icons/css3-plain-wordmark.svg')}}" class="m-2" alt="CSS3" title="CSS3" width="40px">
+                            <img src="{{asset('assets/icons/javascript-plain.svg')}}" class="m-2" alt="Javascript" title="Javascript" width="40px">
+                            <img src="{{asset('assets/icons/bootstrap-original-wordmark.svg')}}" class="m-2" alt="Bootstrap" title="Bootstrap" width="40px">
+                            <img src="{{asset('assets/icons/jquery-plain-wordmark.svg')}}" class="m-2" alt="Jquery" title="Jquery" width="40px">
+                            <img src="{{asset('assets/icons/php-original.svg')}}" alt="PHP" class="m-2" title="PHP" width="40px">
+                            <img src="{{asset('assets/icons/mysql-original-wordmark.svg')}}" class="m-2" alt="MySQL" title="MySQL" width="40px">
+                            <img src="{{asset('assets/icons/laravel-original.svg')}}" class="m-2" alt="Laravel 11" title="Laravel 11" width="40px">
+                            <img src="{{asset('assets/icons/git-original.svg')}}" class="m-2" alt="Manejo de GIT" title="Manejo de GIT" width="40px">
+                            <img src="{{asset('assets/icons/sqlite-original.svg')}}" class="m-2" alt="SQLITE" title="SQLITE" width="40px">
+                            <img src="{{asset('assets/icons/angular-original.svg')}}" class="m-2" alt="Angular" title="Angular" width="40px">
+                            <img src="{{asset('assets/icons/react-original.svg')}}" class="m-2" alt="ReactJs" title="ReactJs" width="40px">
+                            <img src="{{asset('assets/icons/vuejs-original.svg')}}" class="m-2" alt="Vue.js" title="Vue.js" width="40px">
+                            <img src="{{asset('assets/icons/nodejs-plain-wordmark.svg')}}" class="m-2" alt="Node.js" title="Node.js" width="40px">
+                            <img src="{{asset('assets/icons/mongodb-original.svg')}}" class="m-2" alt="MongoDB" title="MongoDB" width="40px">
+                            <img src="{{asset('assets/icons/electron-original.svg')}}" class="m-2" alt="ElectronJs" title="ElectronJs" width="40px">
                         </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-7 border">
+                        <p class="title-section-info text-start p-2">Formación</p>
+                        <ul>
+                            <li class="mb-2">
+                                Desarrollador web Full-stack - Instituto Educación IT  (2019 - 2022) <br>
+                                <p class="text-start small text-muted m-0">Sede en CABA</p>
+                                <p class="small">Orientado a desarrollar aplicaciones web utilizando lenguajes en el frontend como html, css, javascript y sus frameworks. Mientras en el backend enfocado con PHP y MySQL</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 border">
+                        <p class="title-section-info text-start p-2">Certificados</p>
+
                     </div>
                 </section>
             </div>
@@ -108,6 +126,37 @@
                     </div>
                 </div>
             </section>
+        </div>
+    </section>
+
+    <section class="container-fluid section-page-content bg-dark py-5">
+        <div class="container mb-5">
+            <p class="title-section mb-4">Contacto</p>
+            <div class="row m-0 justify-content-center">
+                <div class="col-12 col-md-9">
+                    <p>
+                        Estoy acá para responder a tus preguntas, colaborar en proyectos o simplemente charlar sobre tecnología y desarrollo web. No dudes en escribirme.
+                    </p>
+                    <p>
+                        Si preferís comunicarte directamente, podes enviarme un correo a
+                        <ul>
+                            <li> <a href="mailto:LeonelRuiz@dominio.com">LeonelRuiz@dominio.com</a></li>
+                        </ul>
+                    </p>
+                    <div class="row m-0 justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <p class="text-center"> O seguirme en mis redes sociales actuales:</p>
+                            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                                <a href="#" class="m-2" title="Mi Github"><i class="bi bi-github fs-2"></i></a>
+                                <a href="#" class="m-2" title="Mi Perfil de Linkedin"><i class="bi bi-linkedin fs-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center">
+                        Muchas gracias por llegar hasta acá. Te deseo muchos éxitos en tus proyectos.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 @endsection

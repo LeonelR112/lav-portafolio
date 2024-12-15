@@ -19,6 +19,14 @@ main{
     min-height: 88vh;
 }
 
+footer{
+    width: 100%;
+    background-color: black;
+    color: var(--color-white);
+    text-align: center;
+    padding: 1.5em;
+}
+
 .link-nav-m{
     text-decoration: none;
     color: white;
@@ -82,4 +90,19 @@ main{
     text-transform: uppercase;
     font-style: italic;
     text-shadow: 3px 3px 4px var(--color-darkblue);
+}
+
+.top-navbar{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    border-bottom: 1px solid black
+}
+
+@media(min-height: 100px){
+    .top-navbar{
+        opacity: 0.5;
+    }
 }
