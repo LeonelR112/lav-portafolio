@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-primary flip-in-hor-bottom" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-secondary flip-in-hor-bottom" data-bs-theme="dark">
     <div class="container">
         <a class="navbar-brand" href="#">> Leonel Ruiz |</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
