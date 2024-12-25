@@ -27,6 +27,10 @@ footer{
     padding: 1.5em;
 }
 
+#main-navbar{
+    transition: all ease-in-out 250ms;
+}
+
 .link-nav-m{
     text-decoration: none;
     color: white;
@@ -99,6 +103,25 @@ footer{
     left: 0px;
     z-index: 10;
     border-bottom: 1px solid black
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.fondo-blur {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    color: white; /* Texto en color blanco */
+    padding: 10px; /* Espaciado interno */
+}
+
+.card-selectable{
+    transition: transform ease-in-out 250ms;
+}
+
+.card-selectable:hover{
+    transform: scale(1.05);
 }
 
 @media(min-height: 100px){
