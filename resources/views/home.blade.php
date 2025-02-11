@@ -21,8 +21,8 @@
                     <div class="col-12 col-md-6 col-lg-8 border p-2">
                         <p class="title-section-info text-start">Sobre mi</p>
                         <p class="text-start p-2">
-                            Soy un desarrollador web full stack apasionado por crear soluciones digitales innovadoras y eficientes. Con más de 5 años de experiencia en el campo, he trabajado en una variedad de proyectos que abarcan desde aplicaciones web dinámicas hasta sitios estáticos optimizados.
-                            Mi formación profesional en el <a href="#">Instituto Educación IT</a> me ha proporcionado una sólida base en principios de diseño y desarrollo.
+                            Soy un desarrollador web full stack apasionado por crear soluciones digitales innovadoras y eficientes. Con más de 5 años de experiencia en el campo, he trabajado en unos cuantos proyectos que abarcan desde aplicaciones web dinámicas hasta sitios estáticos optimizados.
+                            Mi formación profesional en el <a href="https://www.educacionit.com" target="_blank">Instituto Educación IT</a> me ha proporcionado una sólida base en principios de diseño y desarrollo.
                             Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.
                         </p>
                     </div>
@@ -62,11 +62,65 @@
                         <section class="splide" id="cert_splide" aria-label="Splide Basic HTML Example">
                             <div class="splide__track">
                                 <ul class="splide__list">
-                                    <li class="splide__slide mx-1 text-center position-relative">
-                                        <img src="{{asset('assets/img/cer-example-mini.png')}}" alt="img_not_found" class="img-fluid">
-                                        <div class="w-100 fondo-blur position-absolute bottom-0 end-0 text-center">PHP y MySQL <br><span class="text-muted small">(<i class="bi bi-hand-index-thumb"></i> ver)<span></div>
-                                    </li>
+                                    @if($certificados->count() > 0)
+                                        @foreach ($certificados as $certificado)
+                                            <li class="splide__slide mx-1 text-center position-relative">
+                                                <img src="{{asset("assets/img/certs/" . $certificado->url_imagen_cert)}}" alt="img_not_found" class="img-fluid">
+                                                <div class="w-100 fondo-blur position-absolute bottom-0 end-0 text-center">{{$certificado->nombre}} <br><span class="text-muted small">(<i class="bi bi-hand-index-thumb"></i> ver)<span></div>
+                                            </li>
+                                        @endforeach
+                                    @endif
                                 </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 border">
+                        <p class="title-section-info text-start p-2">Otros conocimientos</p>
+                        <section class="row m-0 justify-content-center g-2">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card h-100">
+                                    <div class="card-body h-100">
+                                        <div class="w-100 h-100 d-flex justify-content-between align-items-center flex-wrap">
+                                            <div class="text-center w-100">
+                                                <i class="bi bi-pc-display display-4"></i><i class="bi bi-tools display-6"></i>
+                                            </div>
+                                            <div class="w-100 text-wrap text-center">
+                                                <p class="mb-0 fs-5 text-wrap">
+                                                    Soporte y Reparación de PC
+                                                </p>
+                                                <p class="small text-start mb-0 text-muted">
+                                                    Certificado (2014) - <a href="https://institutosmas.com.ar">Instituto MAS</a> (Lomas de zamora - Bs As)
+                                                </p>
+                                                <p class="small text-start mb-0">
+                                                    Conocimientos en reparación de PC en Software, Hardware, Electrónica y Redes.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card h-100">
+                                    <div class="card-body h-100">
+                                        <div class="w-100 h-100 d-flex justify-content-between align-items-center flex-wrap">
+                                            <div class="text-center w-100">
+                                                <i class="bi bi-microsoft display-6" title="Windows 10/11"></i><i class="bi bi-file-earmark-word-fill display-6" title="Word"></i><i class="bi bi-file-earmark-excel-fill display-6" title="Excel"></i><i class="bi bi-file-ppt-fill display-6" title="PowerPoint"></i><i class="bi bi-database-fill display-6" title="Access"></i>
+                                            </div>
+                                            <div class="w-100 text-wrap text-center">
+                                                <p class="mb-0 fs-5 text-wrap">
+                                                    Operador de PC
+                                                </p>
+                                                <p class="small text-start mb-0 text-muted">
+                                                    Certificado (2018) - Centro Educativo Lanús (Lanús Este - Bs As)
+                                                </p>
+                                                <p class="small text-start mb-0">
+                                                    Manejo del paquete de Microsoft Office(Access, Excel, Power Point y Word) en el sistema operativo Windows para realizar seguimientos y administración de datos.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -97,7 +151,7 @@
                             <div class="d-flex justify-content-between justify-content-center flex-wrap">
                                 <p class=""><i class="bi bi-geo-alt-fill"></i> Balvanera Cdad. Autónoma de Buenos Aires</p>
                             </div>
-                            <p class="">Desarrollo de diversas aplicaciones como sistemas de gestión, catálogos virtuales, landings, e-learning, e-commerce, envío de emails masivos y carritos de compras con chekout Mercadopago.</p>
+                            <p class="">Encargado en los desarrollos de diversas aplicaciones como sistemas de gestión, catálogos virtuales, landings, e-learning, e-commerce, envío de emails masivos y carritos de compras con chekout Mercadopago.</p>
                             <div class="mb-1">
                                 <span class="badge bg-primary rounded-0">HTML</span>
                                 <span class="badge bg-primary rounded-0">CSS</span>
@@ -222,6 +276,7 @@
 @section('footer-scripts')
     <script>
         const URL_BG1 = `{{asset('assets/img/background-blue-01.jpg')}}`;
+        const CERTIFICADOS = @json($certificados);
     </script>
     <script src="{{asset('js/splide.min.js')}}"></script>
     <script src="{{asset('js/pages/home/index.js')}}"></script>
