@@ -67,6 +67,7 @@
                                             <li class="splide__slide mx-1 text-center position-relative">
                                                 <img src="{{asset("assets/img/certs/" . $certificado->url_imagen_cert)}}" alt="img_not_found" class="img-fluid">
                                                 <div class="w-100 fondo-blur position-absolute bottom-0 end-0 text-center">{{$certificado->nombre}} <br><span class="text-muted small">(<i class="bi bi-hand-index-thumb"></i> ver)<span></div>
+                                                <a href="javascript:void(0)" class="stretched-link link-moreinfo-cert" data-idc="{{$certificado->id_cert}}"></a>
                                             </li>
                                         @endforeach
                                     @endif
@@ -74,7 +75,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="col-12 border">
+                    <div class="col-12 border pb-2">
                         <p class="title-section-info text-start p-2">Otros conocimientos</p>
                         <section class="row m-0 justify-content-center g-2">
                             <div class="col-12 col-md-6 col-lg-4">
