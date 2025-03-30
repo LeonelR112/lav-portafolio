@@ -57,6 +57,7 @@
                             </li>
                         </ul>
                     </div>
+                    @if($certificados->count() > 0)
                     <div class="col-12 border">
                         <p class="title-section-info text-start p-2">Certificados</p>
                         <section class="splide" id="cert_splide" aria-label="Splide Basic HTML Example">
@@ -75,6 +76,7 @@
                             </div>
                         </section>
                     </div>
+                    @endif
                     <div class="col-12 border pb-2">
                         <p class="title-section-info text-start p-2">Otros conocimientos</p>
                         <section class="row m-0 justify-content-center g-2">

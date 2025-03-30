@@ -63,28 +63,30 @@ document.addEventListener('DOMContentLoaded', e => {
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     CertificadoController = new CertificadosHandler(CERTIFICADOS);
 
-    new Splide('#cert_splide', {
-        type: 'slide',
-        autoplay: false,
-        interval: 5000,
-        nearby: 'nearby',
-        perPage: 3,
-        pagination : false,
-        breakpoints: {
-            550 :{
-                perPage : 1
-            },
-            820 :{
-                perPage: 2
-            },
-            1300: {
-                perPage: 3
-            },
-            2000: {
-                perPage: 4
+    if(CERTIFICADOS.length > 0){
+        new Splide('#cert_splide', {
+            type: 'slide',
+            autoplay: false,
+            interval: 5000,
+            nearby: 'nearby',
+            perPage: 3,
+            pagination : false,
+            breakpoints: {
+                550 :{
+                    perPage : 1
+                },
+                820 :{
+                    perPage: 2
+                },
+                1300: {
+                    perPage: 3
+                },
+                2000: {
+                    perPage: 4
+                }
             }
-        }
-    } ).mount();
+        } ).mount();
+    }
 
     $('.background-1').parallax({
         imageSrc: URL_BG1,
